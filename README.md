@@ -26,7 +26,7 @@ I accept Pull Requests! To get set up for development simply:
 The app is meant to be deployed as an **AWS Lambda** function. Setting that up is beyond the scope of this readme though. There's a deploy.bat file in this project that will deploy to AWS Lambda if you're on Windows, but you will need to have the AWS toolkit installed and configured, and have an "alexa-plex" function set up.
 
 ## Dynamo DB
-This app requires DynamoDB. You'll need to get that set up and create a table named `AlexaPlexUsers`
+This app requires DynamoDB. You'll need to get that set up and create a table named `AlexaPlexUsers` with a primary key 'userid'
 
 ## Testing on a live Plex server
 You need to define a few environment variables to tell this app how to talk to your Plex server. The project is set up to use ```dotenv``` so you can simply create a ```.env``` file in the project root to define all of the needed variables. Here's a template:
